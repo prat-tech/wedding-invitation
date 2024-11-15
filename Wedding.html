@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+            color: #ffffff;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        .container {
+            padding: 80px 20px;
+            position: relative;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .title {
+            font-family: 'Great Vibes', cursive;
+            font-size: 4em;
+            margin-bottom: 20px;
+            color: #ffecd2;
+        }
+
+        .subtitle {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .details {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        .rsvp-btn {
+            display: inline-block;
+            padding: 15px 40px;
+            background: #ff6363;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 30px;
+            margin-top: 40px;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        .rsvp-btn:hover {
+            background: #ff8b8b;
+            transform: scale(1.1);
+        }
+
+        /* Sticker Styles */
+        .sticker {
+            position: absolute;
+            width: 100px;
+            animation: float 4s infinite ease-in-out alternate;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-20px); }
+        }
+
+        .sticker1 {
+            top: 10px;
+            left: 10px;
+            transform: rotate(-15deg);
+        }
+
+        .sticker2 {
+            bottom: 20px;
+            right: 20px;
+            transform: rotate(10deg);
+        }
+
+        .sticker3 {
+            top: 50%;
+            left: 80%;
+            transform: rotate(-30deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://yourimageurl.com/sticker1.png" alt="Flower Sticker" class="sticker sticker1">
+        <img src="https://yourimageurl.com/sticker2.png" alt="Ring Sticker" class="sticker sticker2">
+        <img src="https://yourimageurl.com/sticker3.png" alt="Heart Sticker" class="sticker sticker3">
+        
+        <h1 class="title">John & Jane</h1>
+        <p class="subtitle">Together with their families, invite you to their wedding</p>
+        <div class="details">
+            <p>Join us on <strong>June 15, 2025</strong> at <strong>4:00 PM</strong></p>
+            <p>Venue: The Grand Hall, Cityview Plaza</p>
+            <p>Reception to follow</p>
+        </div>
+        <a href="#" class="rsvp-btn">RSVP Now</a>
+    </div>
+</body>
+</html>
